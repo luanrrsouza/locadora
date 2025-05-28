@@ -1,4 +1,4 @@
-package com.locadora.filme.entity;
+package com.locadora.filme;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,4 +1,4 @@
-package com.locadora.cliente.entity;
+package com.locadora.cliente;
 
 import jakarta.persistence.*;
 import lombok.*;

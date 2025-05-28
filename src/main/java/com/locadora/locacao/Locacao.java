@@ -1,12 +1,11 @@
-package com.locadora.locacao.entity;
+package com.locadora.locacao;
 
-import com.locadora.cliente.entity.Cliente;
-import com.locadora.filme.entity.Filme;
+import com.locadora.cliente.Cliente;
+import com.locadora.filme.Filme;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
 
 @Entity
 @Data
