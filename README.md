@@ -72,6 +72,34 @@ cd locadora
 - PUT /locacoes/{id}
 - DELETE /locacoes/{id}
 
+## 🐳 Como executar com Docker
+Este projeto está containerizado usando Docker, permitindo subir tanto a aplicação quanto o banco de dados MySQL de forma prática.
+
+## ✅ Pré-requisitos
+Docker Desktop instalado
+
+Docker Compose (já vem junto com o Docker Desktop)
+
+🚀 Passo a passo para rodar o projeto
+1. Clone o repositório
+```
+git clone https://github.com/luanrrsouza/locadora.git
+cd locadora
+```
+3. Suba os containers
+```
+docker-compose up --build
+```
+Esse comando irá:
+
+Construir a imagem da aplicação com Spring Boot
+
+Subir o container da aplicação (localhost:8080)
+
+Subir o container do MySQL (localhost:3306)
+
+3. Acesse a API
+URL base: http://localhost:8080
 
 
  
