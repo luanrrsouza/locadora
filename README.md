@@ -4,7 +4,7 @@ Este é um sistema de gerenciamento de locadora desenvolvido como atividade aval
 
 ## 🚀 Tecnologias Utilizadas
 
-- Java 17+
+- Java 21
 - Spring Boot
 - Spring Data JPA
 - Lombok
@@ -78,25 +78,25 @@ Este projeto está containerizado usando Docker, permitindo subir tanto a aplica
 ## ✅ Pré-requisitos
 Docker Desktop instalado
 
-Docker Compose (já vem junto com o Docker Desktop)
-
 🚀 Passo a passo para rodar o projeto
 1. Clone o repositório
 ```
 git clone https://github.com/luanrrsouza/locadora.git
 cd locadora
 ```
-3. Suba os containers
+2. Suba os containers
 ```
 docker-compose up --build
 ```
-Esse comando irá:
+Este comando irá:
+
+Gerar automaticamente o .jar da aplicação usando Maven dentro do Docker
 
 Construir a imagem da aplicação com Spring Boot
 
-Subir o container da aplicação (localhost:8080)
+Subir o container da aplicação em localhost:8080
 
-Subir o container do MySQL (localhost:3306)
+Subir o container do MySQL em localhost:3306
 
 3. Acesse a API
 URL base: http://localhost:8080
