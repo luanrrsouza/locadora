@@ -1,5 +1,6 @@
 package com.locadora.locacao;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.locadora.cliente.Cliente;
 import com.locadora.filme.Filme;
 import jakarta.persistence.*;
@@ -11,17 +12,18 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Locacao {
-    @Id
-    @GeneratedValue( strategy = GenerationType.IDENTITY)
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
+    @JsonBackReference
     private Cliente cliente;
 
     @ManyToOne
+    @JsonBackReference
     private Filme filme;
 
     private LocalDate dataLocacao;
